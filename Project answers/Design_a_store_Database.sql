@@ -16,7 +16,6 @@ insert into store values(13,"RGB Lights",20,4000,4);
 insert into store values(14,"Graphics Card",10,150000,4);
 insert into store values(15,"Cooling Fans",10,120000,4);
 insert into store values(16,"Power Supply",15,100000,4);
-insert into store values(17,"Nuts&Bolts",100,180000,5);
 
 select * from store order by price;
 
@@ -24,4 +23,4 @@ select sum(quantity) from store;
 
 select avg(price) from store;
 
-select item from store where rating = max(ratings);
+select item,price,quantity from store where ratings = (select max(ratings) from store);
