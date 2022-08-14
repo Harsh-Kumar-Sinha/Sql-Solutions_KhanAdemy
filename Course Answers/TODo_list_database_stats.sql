@@ -4,4 +4,6 @@ INSERT INTO todo_list VALUES (2, "vacuuming", 20);
 INSERT INTO todo_list VALUES (3, "Learn some stuff on KA", 30);
 INSERT INTO  todo_list VALUES (4,"Exercise",45);
 
+select * from todo_list;
+
 select sum(minutes) from todo_list;
