@@ -38,8 +38,8 @@ INSERT INTO friends (person1_id, person2_id)
 select fullname,name from persons join hobbies on persons.id = hobbies.person_id;
 
 /*select fullname,name from persons join hobbies on persons.id = hobbies.person_id;*/
-select h1.fullname,h2.fullname from friends 
-    join persons h1 
-    on friends.person1_id = h1.id
-    join persons h2
-    on friends.person2_id = h2.id;
+select p1.fullname,p2.fullname from friends 
+    join persons p1 
+    on friends.person1_id = p1.id
+    join persons p2
+    on friends.person2_id = p2.id;
