@@ -15,7 +15,7 @@ INSERT INTO documents (author, title, content)
 INSERT INTO documents (author, title, content)
     VALUES ("Jackie Paper", "Things I'm Afraid Of", "Talking to my parents, the sea, giant pirates, heights.");
 
-SELECT * FROM documents;
+SELECT author,title FROM documents;
 
 update documents set author = 'Jackie Draper' where author ='Jackie Paper';
 select * from documents;
