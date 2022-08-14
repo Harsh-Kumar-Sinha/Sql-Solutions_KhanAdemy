@@ -21,4 +21,7 @@ insert into store values(17,"Nuts&Bolts",100,180000,5);
 select * from store order by price;
 
 select sum(quantity) from store;
+
 select avg(price) from store;
+
+select item from store where rating = max(ratings);
