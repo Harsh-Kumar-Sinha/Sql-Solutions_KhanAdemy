@@ -31,7 +31,7 @@ INSERT INTO wealth (billionare_id, net_worth, source_wealth) VALUES (7, "131.1 b
 INSERT INTO wealth (billionare_id, net_worth, source_wealth) VALUES (8, "95.6 billion", "Reliance");
 
 /*Return total net worth for each billionare*/
-SELECT billionares.fullname, wealth.net_worth
-FROM billionares
-JOIN wealth
-ON billionares.id = wealth.billionare_id;
+SELECT b.fullname, w.net_worth
+FROM billionares b
+JOIN wealth w
+ON b.id = w.billionare_id;
