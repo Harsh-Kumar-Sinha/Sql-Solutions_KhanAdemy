@@ -6,6 +6,6 @@ INSERT INTO movies VALUES (4, "Shrek 2", 2004);
 INSERT INTO movies VALUES (5, "The Lion King", 1994);
 INSERT INTO movies VALUES (6, "Disney's Up", 2009);
  
- select * from movies;
+select * from movies;
  
 select * from movies where release_year >= 2000 order by release_year;
