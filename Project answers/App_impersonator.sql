@@ -14,12 +14,12 @@ CREATE TABLE fitness_pal (
     workout_type TEXT,
     minutes INTEGER);
 
-INSERT INTO fitness_pal (name, workout_type, minutes) VALUES ("Katrina", "running", 50);
-INSERT INTO fitness_pal (name, workout_type, minutes) VALUES ("Mel", "jumping", 15);
-INSERT INTO fitness_pal (name, workout_type, minutes) VALUES ("Don", "running", 30);
-INSERT INTO fitness_pal (name, workout_type, minutes) VALUES ("Deb", "swimming", 60);
+INSERT INTO fitness_pal (name, workout_type, minutes) VALUES ("Harsh", "running", 50);
+INSERT INTO fitness_pal (name, workout_type, minutes) VALUES ("Ayush", "jumping", 15);
+INSERT INTO fitness_pal (name, workout_type, minutes) VALUES ("Komolika", "running", 30);
+INSERT INTO fitness_pal (name, workout_type, minutes) VALUES ("Sunil", "swimming", 60);
 
-UPDATE fitness_pal set name = "Donny"
+UPDATE fitness_pal set name = "Kamalika"
 WHERE id = 3;
 
 DELETE FROM fitness_pal 
