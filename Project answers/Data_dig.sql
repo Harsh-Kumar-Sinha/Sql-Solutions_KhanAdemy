@@ -1,17 +1,20 @@
 /* With respect to the Astronaut DataSet */
+Select * from astronauts;
 
 /* Point 1 */
 SELECT name, max(Space_Flight_hr) FROM astronauts;
+
 SELECT name, min(Space_Flight_hr) FROM astronauts;
+
 SELECT name, round(avg(Space_Flight_hr),2) "Avg_spaceFlight_hr" FROM astronauts;
 
 /* Point 2 */
 select Graduate_Major,count(Graduate_Major) from astronauts Group by Graduate_Major Having count(*) > 10;
 
-select Name,Graduate_Major from astronauts group by Graduate_Major
-Having Graduate_Major LIKE 'Aerospace%';
+SELECT Name,Graduate_Major from astronauts group by Graduate_Major Having Graduate_Major LIKE 'Aerospace%';
 
 select status,count(*) from astronauts group by status; 
+
 /* Point 3 */
 SELECT status,count(*) as No_of_Employees,
 CASE
